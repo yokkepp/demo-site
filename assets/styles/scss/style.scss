@@ -1,0 +1,239 @@
+$gray: rgb(77, 77, 77);
+
+* {
+  font-family: "Noto Sans JP", sans-serif, "Libre Baskerville", serif;
+}
+
+.wrapper {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.logo {
+  padding-top: 30px;
+}
+
+/*nav*/
+#nav {
+  height: 100vh;
+  width: 100vw;
+  background-color: #13cb59;
+  visibility: hidden;
+  position: fixed;
+  transition: 0.2s;
+  opacity: 0;
+  z-index: 100;
+  &.active {
+    visibility: visible;
+    opacity: 1;
+  }
+  .menu {
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 100px;
+
+    li {
+      margin-top: 30px;
+    }
+    button {
+      height: 70px;
+      width: 300px;
+      border: 1px solid white;
+      margin-top: 50px;
+      position: relative;
+      transition: 0.2s;
+      &:hover {
+        background-color: #fff;
+        color: #13cb59;
+      }
+      &::after {
+        content: "";
+        border-right: 1px solid white;
+        border-bottom: 1px solid white;
+        background-color: transparent;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        // z-index: 110;
+        top: 5px;
+        left: 5px;
+      }
+    }
+  }
+}
+
+/*hamburger*/
+#hamburger {
+  height: 100px;
+  width: 100px;
+  background-color: #13cb59;
+  position: absolute;
+  z-index: 200;
+  top: 0;
+  right: 0;
+  &.open {
+    background-color: yellowgreen;
+
+    & span:nth-child(1) {
+      transform: translateY(18px) rotate(45deg);
+    }
+    & span:nth-child(2) {
+      transform: scale(0);
+    }
+    & span:nth-child(3) {
+      transform: translateY(-15px) rotate(-45deg);
+    }
+  }
+
+  & span {
+    display: block;
+    height: 1px;
+    border-bottom: 2px solid white;
+    width: 50%;
+    margin-top: 15px;
+    margin-left: 25px;
+    transition: 0.2s;
+
+    &:first-child {
+      margin-top: 32px;
+    }
+  }
+}
+
+/*topview*/
+.topview {
+  position: relative;
+  &__image {
+    margin-left: auto;
+    & img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+    height: 800px;
+    width: 800px;
+    object-fit: cover;
+    position: relative;
+    z-index: 10;
+    &::after {
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      z-index: 20;
+      box-shadow: inset 0 0 40px white, inset 0 0 40px white,
+        inset 0 0 40px white, inset 0 0 40px white, inset 0 0 20px white,
+        inset 0 0 20px white, inset 0 0 20px white, inset 0 0 20px white;
+
+      top: 0;
+      left: 0;
+    }
+  }
+  &__text {
+    font-size: 3rem;
+    font-weight: bold;
+    color: $gray;
+    text-shadow: 0 0 7px white, 0 0 7px white, 0 0 7px white;
+    position: absolute;
+    top: 50%;
+    z-index: 15;
+  }
+  button {
+    height: 80px;
+    width: 500px;
+    font-size: 1.5rem;
+    position: absolute;
+    background-color: #13cb59;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    top: 70%;
+    z-index: 15;
+    box-shadow: 0 7px 0 green;
+    transition: 0.2s;
+    &::after {
+      content: "";
+      position: absolute;
+      right: 30px;
+      top: 35px;
+      height: 15px;
+      width: 15px;
+      border-bottom: 3px solid white;
+      border-right: 3px solid white;
+      transform: rotate(-45deg);
+    }
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}
+
+/*reason*/
+.section-title {
+  font-size: 2.5rem;
+  color: $gray;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 100px;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100%;
+    width: 300px;
+    margin: 0 auto;
+    border-bottom: 4px solid #13cb59;
+  }
+}
+.reason {
+  .bg-green {
+    margin-top: 100px;
+    background-color: #13cb59;
+    padding: 70px 0;
+  }
+
+  .slide-card {
+    background-color: white;
+    width: 50%;
+    padding: 30px 50px;
+    margin-top: 20px;
+    display: flex;
+    &__contents {
+      margin: 30px auto;
+      display: flex;
+    }
+    &.left-side {
+      margin-right: auto;
+      border-top-right-radius: 30px;
+      border-bottom-right-radius: 30px;
+    }
+    &.right-side {
+      margin-left: auto;
+      border-top-left-radius: 30px;
+      border-bottom-left-radius: 30px;
+    }
+    &:first-child {
+      margin-top: 0;
+    }
+    & img {
+      height: 80px;
+      width: 80px;
+      object-fit: contain;
+    }
+    &__text {
+      margin: 0 40px;
+      &-title {
+        font-size: 1.8rem;
+        color: #13cb59;
+        font-weight: bold;
+      }
+      &-description {
+        font-size: 1.5rem;
+        margin-top: 10px;
+      }
+    }
+  }
+}

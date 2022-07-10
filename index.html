@@ -5,8 +5,74 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>demo-site</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@0;1&family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/styles/destyle.css">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+
 </head>
 <body>
-    
+    <header>
+        <nav id="nav">
+            <div class="wrapper">
+                <h1 class="logo">
+                    <img src="./assets/images/logo-w.png" alt="logo">
+                </h1>
+                <ul class="menu">
+                    <a href="#"><li>U-GROUWTHが選ばれる理由</li></a>
+                    <a href="#"><li>受講生の声</li></a>
+                    <a href="#"><li>スクールの概要</li></a>
+                    <button>無料体験に申し込む
+                    </button>
+                </ul>
+            </div>
+        </nav>
+        <section class="topview">
+
+            <div class="wrapper">
+                <h1 class="logo">
+                    <img src="./assets/images/logo.png" alt="logo">
+                </h1>
+                <div class="topview__image">
+                    <img src="./assets/images/top1.jpeg" alt="topview">
+                </div>
+                <h2 class="topview__text">
+                    本気で習得したいなら<br/>
+                    U-GROUWTHエンジニア育成スクール
+                </h2>
+                <button>無料体験はこちら</button>
+            </div>
+            <div id="hamburger">
+            </div>
+        </section>
+        <section class="reason">
+            <h3 class="section-title">U-GROUWTHが選ばれる理由</h3>
+            <div class="bg-green">
+                <article class="slide-card left-side">
+                    <div class="slide-card__contents">
+                        <img src="./assets/images/pc.png" alt="pc">
+                        <div class="slide-card__text">
+                            <p class="slide-card__text-title">オンライン対応</p>
+                            <p class="slide-card__text-description">24時間いつでも受講できる！</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="slide-card right-side">
+                    <div class="slide-card__contents">
+                        <img src="./assets/images/recruitment.png" alt="human">
+                        <div class="slide-card__text">
+                            <p class="slide-card__text-title">講師は現役エンジニア</p>
+                            <p class="slide-card__text-description">お気に入りの講師が自由に選べる！</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section classs="student">
+            <h3 class="section-title">受講生の声</h3>
+        </section>
+    </header>
+    <script src="./assets/js/hamburger.js"></script>
 </body>
 </html>
