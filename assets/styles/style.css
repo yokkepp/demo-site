@@ -274,4 +274,68 @@
   font-size: 1.5rem;
   margin-top: 10px;
 }
+
+/*voice*/
+.voice__contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 100px;
+}
+
+.voice__contents.right-side {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.voice__student {
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.voice__student img {
+  width: 150px;
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+
+.voice__comment {
+  background-color: #e7e7e7;
+  margin-left: 50px;
+  margin-right: 50px;
+  border-radius: 25px;
+  width: 60%;
+  font-size: 1.1rem;
+  padding: 25px;
+  line-height: 30px;
+  position: relative;
+}
+
+.voice__comment.left-side::after {
+  content: "";
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  top: 25%;
+  left: -10px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  background-color: #e7e7e7;
+}
+
+.voice__comment.right-side::after {
+  content: "";
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  top: 25%;
+  right: -10px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  background-color: #e7e7e7;
+}
 /*# sourceMappingURL=style.css.map */

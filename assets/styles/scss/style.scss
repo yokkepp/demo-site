@@ -237,3 +237,59 @@ $gray: rgb(77, 77, 77);
     }
   }
 }
+
+/*voice*/
+.voice {
+  &__contents {
+    display: flex;
+    margin-top: 100px;
+    &.right-side {
+      flex-direction: row-reverse;
+    }
+  }
+  &__student {
+    font-size: 0.9rem;
+    text-align: center;
+    & img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+  }
+  &__comment {
+    background-color: rgb(231, 231, 231);
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 25px;
+    width: 60%;
+    font-size: 1.1rem;
+    padding: 25px;
+    line-height: 30px;
+    position: relative;
+    &.left-side {
+      &::after {
+        content: "";
+        height: 25px;
+        width: 25px;
+        position: absolute;
+        top: 25%;
+        left: -10px;
+        transform: rotate(45deg);
+        background-color: rgb(231, 231, 231);
+      }
+    }
+    &.right-side {
+      &::after {
+        content: "";
+        height: 25px;
+        width: 25px;
+        position: absolute;
+        top: 25%;
+        right: -10px;
+        transform: rotate(45deg);
+        background-color: rgb(231, 231, 231);
+      }
+    }
+  }
+}
