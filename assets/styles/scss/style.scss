@@ -5,8 +5,14 @@ $gray: rgb(77, 77, 77);
 }
 
 .wrapper {
-  max-width: 1300px;
+  max-width: 1200px;
   margin: 0 auto;
+}
+.flex {
+  display: flex;
+}
+.wrap {
+  flex-wrap: wrap;
 }
 .logo {
   padding-top: 30px;
@@ -174,7 +180,7 @@ $gray: rgb(77, 77, 77);
   color: $gray;
   font-weight: bold;
   text-align: center;
-  margin-top: 100px;
+  padding-top: 100px;
   position: relative;
   &::after {
     content: "";
@@ -240,9 +246,11 @@ $gray: rgb(77, 77, 77);
 
 /*voice*/
 .voice {
+  padding-bottom: 100px;
   &__contents {
     display: flex;
     margin-top: 100px;
+
     &.right-side {
       flex-direction: row-reverse;
     }
@@ -296,16 +304,91 @@ $gray: rgb(77, 77, 77);
 
 /*shcool*/
 .shcool {
-  background-color: gray;
-  padding-top: 50px;
-  margin-top: 50px;
-  .flex {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
+  background-color: rgb(200, 200, 200);
   .card {
-    padding: 30px;
-    min-width: 100px;
+    padding: 80px;
+    max-width: 575px;
+    background-color: white;
+    border-radius: 30px;
+    margin-bottom: 50px;
+    &__title {
+      font-size: 2rem;
+      font-weight: bold;
+      text-align: center;
+    }
+    &__sub-title {
+      margin-top: 20px;
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-align: center;
+    }
+    &__description {
+      margin-top: 30px;
+      font-size: 1.2rem;
+    }
   }
+}
+.py-5 {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.jc-sb {
+  justify-content: space-between;
+}
+
+.try {
+  padding-top: 150px;
+  padding-bottom: 150px;
+  .main-text {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  .sub-text {
+    margin-top: 30px;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  button {
+    width: 100%;
+    height: 100px;
+    background-color: #13cb59;
+    margin-top: 100px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    border-radius: 50px;
+    transition: 0.2s;
+    &:hover {
+      background-color: #fff;
+      border: 3px solid #13cb59;
+      color: #13cb59;
+    }
+  }
+}
+footer {
+  padding-top: 50px;
+  background-color: rgb(200, 200, 200);
+  p {
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+  ul {
+    margin-top: 10px;
+    transform: translateX(10px);
+    li {
+      margin-top: 10px;
+    }
+  }
+  article {
+    width: 20%;
+  }
+}
+.copyright {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  font-weight: 200;
+  font-size: 0.8rem;
 }

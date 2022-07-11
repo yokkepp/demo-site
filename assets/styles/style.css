@@ -3,8 +3,19 @@
 }
 
 .wrapper {
-  max-width: 1300px;
+  max-width: 1200px;
   margin: 0 auto;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wrap {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .logo {
@@ -197,7 +208,7 @@
   color: #4d4d4d;
   font-weight: bold;
   text-align: center;
-  margin-top: 100px;
+  padding-top: 100px;
   position: relative;
 }
 
@@ -276,6 +287,10 @@
 }
 
 /*voice*/
+.voice {
+  padding-bottom: 100px;
+}
+
 .voice__contents {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -341,21 +356,112 @@
 
 /*shcool*/
 .shcool {
-  background-color: gray;
-  padding-top: 50px;
-  margin-top: 50px;
-}
-
-.shcool .flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  background-color: #c8c8c8;
 }
 
 .shcool .card {
-  padding: 30px;
-  min-width: 100px;
+  padding: 80px;
+  max-width: 575px;
+  background-color: white;
+  border-radius: 30px;
+  margin-bottom: 50px;
+}
+
+.shcool .card__title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.shcool .card__sub-title {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.shcool .card__description {
+  margin-top: 30px;
+  font-size: 1.2rem;
+}
+
+.py-5 {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.jc-sb {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.try {
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+.try .main-text {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.try .sub-text {
+  margin-top: 30px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.try button {
+  width: 100%;
+  height: 100px;
+  background-color: #13cb59;
+  margin-top: 100px;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  border-radius: 50px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.try button:hover {
+  background-color: #fff;
+  border: 3px solid #13cb59;
+  color: #13cb59;
+}
+
+footer {
+  padding-top: 50px;
+  background-color: #c8c8c8;
+}
+
+footer p {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+footer ul {
+  margin-top: 10px;
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
+}
+
+footer ul li {
+  margin-top: 10px;
+}
+
+footer article {
+  width: 20%;
+}
+
+.copyright {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  font-weight: 200;
+  font-size: 0.8rem;
 }
 /*# sourceMappingURL=style.css.map */
