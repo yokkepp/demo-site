@@ -67,7 +67,7 @@ $gray: rgb(77, 77, 77);
   height: 100px;
   width: 100px;
   background-color: #13cb59;
-  position: absolute;
+  position: fixed;
   z-index: 200;
   top: 0;
   right: 0;
@@ -291,5 +291,21 @@ $gray: rgb(77, 77, 77);
         background-color: rgb(231, 231, 231);
       }
     }
+  }
+}
+
+/*shcool*/
+.shcool {
+  background-color: gray;
+  padding-top: 50px;
+  margin-top: 50px;
+  .flex {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    padding: 30px;
+    min-width: 100px;
   }
 }
