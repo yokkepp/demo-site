@@ -464,4 +464,16 @@ footer article {
   font-weight: 200;
   font-size: 0.8rem;
 }
+
+.slide-in-left {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+
+.slide-in-left.inview {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
 /*# sourceMappingURL=style.css.map */
