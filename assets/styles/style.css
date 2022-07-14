@@ -466,14 +466,38 @@ footer article {
 }
 
 .slide-in-left {
-  -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
-  -webkit-transition: 0.2s ease;
-  transition: 0.2s ease;
+  -webkit-transform: translateX(-99%);
+          transform: translateX(-99%);
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
 }
 
 .slide-in-left.inview {
   -webkit-transform: translateX(0);
           transform: translateX(0);
+}
+
+.slide-in-right {
+  -webkit-transform: translateX(99%);
+          transform: translateX(99%);
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.slide-in-right.inview {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.pinch-in {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.pinch-in.inview {
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 /*# sourceMappingURL=style.css.map */
