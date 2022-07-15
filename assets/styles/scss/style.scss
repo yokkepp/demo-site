@@ -25,7 +25,7 @@ $gray: rgb(77, 77, 77);
   background-color: #13cb59;
   visibility: hidden;
   position: fixed;
-  transition: 0.2s;
+  transition: 0.3s ease;
   opacity: 0;
   z-index: 100;
   &.active {
@@ -111,6 +111,7 @@ $gray: rgb(77, 77, 77);
   position: relative;
   &__image {
     margin-left: auto;
+
     & img {
       height: 100%;
       width: 100%;
@@ -199,6 +200,7 @@ $gray: rgb(77, 77, 77);
     margin-top: 100px;
     background-color: #13cb59;
     padding: 70px 0;
+    overflow: hidden;
   }
 
   .slide-card {
@@ -395,22 +397,28 @@ footer {
 
 .slide-in-left {
   transform: translateX(-99%);
+  opacity: 0;
   transition: 0.5s ease;
   &.inview {
     transform: translateX(0);
+    opacity: 1;
   }
 }
 .slide-in-right {
   transform: translateX(99%);
   transition: 0.5s ease;
+  opacity: 0;
   &.inview {
     transform: translateX(0);
+    opacity: 1;
   }
 }
 .pinch-in {
-  transform: scale(0);
+  transform: scale(0.4);
   transition: 0.5s ease;
+  opacity: 0;
   &.inview {
     transform: scale(1);
+    opacity: 1;
   }
 }

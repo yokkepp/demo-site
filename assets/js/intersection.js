@@ -13,8 +13,7 @@ const callback = (entries, observer) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       entry.target.classList.add("inview");
-    } else {
-      entry.target.classList.remove("inview");
+      observer.unobserve(entry.target);
     }
   });
 };
